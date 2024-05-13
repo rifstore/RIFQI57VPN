@@ -30,18 +30,19 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/RIFQI57VPN/RIFQI57VPN/main/limit/menu.zip
+   cd
+    wget -q https://raw.githubusercontent.com/RIFQI57VPN/RIFQI57VPN/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
-    rm -rf menu
-    rm -rf menu.zip
-    rm -rf update.sh
+    rm -r /root/menu
+    rm /root/menu.zip
+    rm /root/update.sh
 }
 netfilter-persistent
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m          UPDATE SCRIPT                      \e[0m"
+echo -e " \e[1;97;101m          UPDATE SCRIPT        \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "  \033[1;91m update script service\033[1;37m"
